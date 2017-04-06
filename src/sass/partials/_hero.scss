@@ -1,0 +1,16 @@
+#hero {
+  background-color: $color-text;
+  color: $color-text-white;
+
+  .container {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  h1, h4 {
+    color: $color-accent;
+  }
+
+  p {
+  }
+}

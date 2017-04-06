@@ -24,12 +24,18 @@ $spacing-2x: $spacing-1x * 2;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-gray: #e0e0e0;
-$color-accent: #A90000;
-$color-text: #444;
+
+$color-bg: #f5ddd8;
+$color-accent: #ec008c;
+$color-accent-blue: #3EC8E7;
+$color-text: #20215c;
 $color-text-white: $color-white;
 $color-link: $color-gray;
 
+// Transistion timing
+$time-default: 1s;
+
 // Font Stack
-$lato-stack: "Lato", Helvetica, sans-serif;
-$dosis-stack: "Dosis", Helvetica, sans-serif;
 $default-stack: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$head-stack: "Lato", Helvetica, sans-serif;
+$body-stack: "Dosis", Helvetica, sans-serif;
