@@ -32,6 +32,10 @@ $column-margin: 4% !default; // space between columns
   box-sizing: border-box;
 }
 
+.row {
+  margin-bottom: 2rem;
+}
+
 // For devices larger than 400px
 @media (#{$bp-larger-than-mobile}) {
   .container {
