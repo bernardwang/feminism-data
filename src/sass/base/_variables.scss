@@ -1,0 +1,35 @@
+// Global variables
+// Module-specific variables
+// are bundled with the module
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Sizing and Spacing
+$width-100: 100%;
+$width-50: ($width-100 / 2);
+$width-25: ($width-100 / 4);
+$width-75: ($width-100 * 3)/4;
+$width-66: ($width-100 * 2)/3;
+$width-33: ($width-100 * 2)/6;
+
+$spacing-1x: 1rem;
+$spacing-2x: $spacing-1x * 2;
+
+// Colors
+$color-black: #000000;
+$color-white: #ffffff;
+$color-gray: #e0e0e0;
+$color-accent: #A90000;
+$color-text: #444;
+$color-text-white: $color-white;
+$color-link: $color-gray;
+
+// Font Stack
+$lato-stack: "Lato", Helvetica, sans-serif;
+$dosis-stack: "Dosis", Helvetica, sans-serif;
+$default-stack: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;

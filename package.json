@@ -1,0 +1,44 @@
+{
+  "name": "feminism-data",
+  "version": "0.0.0",
+  "description": "visualization of a survey on feminism in the aapi community at uiuc",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bernardwang/feminism-data.git"
+  },
+  "author": "Bernard Wang",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --colors",
+    "dev": "webpack --progress --watch",
+    "prod": "webpack -p"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.7.4",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babili": "^0.0.11",
+    "babili-webpack-plugin": "^0.0.10",
+    "browser-sync": "^2.18.8",
+    "css-loader": "^0.26.1",
+    "eslint": "^2.13.1",
+    "favicons-webpack-plugin": "0.0.7",
+    "file-loader": "^0.10.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
+    "html-webpack-template": "^6.0.1",
+    "node-sass": "^4.5.2",
+    "postcss-loader": "^1.3.1",
+    "sass-loader": "^6.0.2",
+    "scss-loader": "0.0.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
