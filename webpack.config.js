@@ -40,7 +40,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        //exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
           presets: ['es2015']
@@ -49,10 +49,20 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'webpack-zepto',
+      d3: 'd3'
+    }),
     new HTMLPlugin({
       title: 'Bernard Wang',
       template: path.resolve(__dirname, 'src', 'pages', 'index.ejs')
     }),
     new FaviconsPlugin(path.resolve(__dirname,'favicon.png'))
-  ]
+  ],
+  resolve: {
+    alias: {
+      'node_modules': path.join(__dirname, 'node_modules'),
+      'bower_modules': path.join(__dirname, 'bower_modules'),
+    }
+  }
 };

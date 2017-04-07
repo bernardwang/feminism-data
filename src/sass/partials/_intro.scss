@@ -1,26 +1,23 @@
-#hero {
-  background-color: $color-text;
-  color: $color-text-white;
-
+#intro {
   .container {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    min-height: 70vh;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     align-content: center;
   }
 
-  h1, h4 {
+  h1 {
     color: $color-accent;
     text-transform: uppercase;
     letter-spacing: 4px;
   }
 
   p {
-    font-weight: 100;
+
   }
 }
