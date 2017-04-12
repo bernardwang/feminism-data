@@ -1,11 +1,10 @@
-#hero {
+.hero {
   background-color: $color-text;
   color: $color-text-white;
 
   .container {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    min-height: 70vh;
+    position: relative;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -20,7 +19,36 @@
     letter-spacing: 4px;
   }
 
+  h1 {
+    margin-bottom: 4rem;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
   p {
     font-weight: 100;
+  }
+
+  &__scroll_wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__scroll_btn {
+    text-transform: uppercase;
+    font-family: $head-stack;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
   }
 }

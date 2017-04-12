@@ -1,0 +1,11 @@
+.js-fadeout {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity $time-default, transform $time-default;
+}
+
+.js-fadein {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity $time-default, transform $time-default;
+}
