@@ -23,5 +23,19 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;       }
 
 p {
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 2.1rem;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Light';
+  src: url('../fonts/HelveticaNeue-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Thin';
+  src: url('../fonts/HelveticaNeue-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
