@@ -40,8 +40,15 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        //exclude: /(node_modules|bower_components)/,
+        exclude: /(vendor)/,
         loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      },
+      {
+        test: /\.min\.js$/,
+        loader: 'script-loader',
         query: {
           presets: ['es2015']
         }
@@ -55,6 +62,9 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       $: 'webpack-zepto',
+      jQuery: 'webpack-zepto',
+      'window.jQuery': 'webpack-zepto',
+      'root.jQuery': 'webpack-zepto',
       d3: 'd3'
     }),
     new HTMLPlugin({

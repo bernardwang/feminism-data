@@ -5,7 +5,6 @@
  */
 
 const scroll = function() {
-
 }
 
 export {
