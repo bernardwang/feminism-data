@@ -40,14 +40,14 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /(vendor)/,
+        exclude: /vendor\/(\S*)\.js$/,
         loader: 'babel-loader',
         query: {
           presets: ['es2015']
         }
       },
       {
-        test: /\.min\.js$/,
+        test: /vendor\/(\S*)\.js$/,
         loader: 'script-loader',
         query: {
           presets: ['es2015']
@@ -65,7 +65,7 @@ module.exports = {
       jQuery: 'webpack-zepto',
       'window.jQuery': 'webpack-zepto',
       'root.jQuery': 'webpack-zepto',
-      d3: 'd3'
+      d3: 'd3',
     }),
     new HTMLPlugin({
       title: 'Bernard Wang',
