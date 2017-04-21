@@ -8,16 +8,24 @@ import velocity from 'Velocity';
 import scrollWatcher from '../vendor/scroll-watcher.js';
 
 const scroll = function() {
-  var watcher = new ScrollWatcher();
-    watcher.on('scrolling', function(evt) {
-    console.log(evt);
-  });
-
-  $("body").velocity({ opacity: 0.5 });
-
   let $fadeElems = $('.js-fade');
-  $fadeElems.forEach(($elem) => {
-    console.log($elem);
+  let fadeThreshold = 300;
+
+  let watcher = new ScrollWatcher();
+  watcher.on('scrolling', function(e) {
+    let viewHeight = jQuery(window).height();
+
+    for(let i = 0; i < $fadeElems.length; i++) {
+      let elem = $fadeElems.get(i);
+      let elemTop = elem.getBoundingClientRect().top;
+      let offset = viewHeight - elemTop;
+      let offsetThreshold = 300;
+      if (offset > offsetThreshold) {
+        $(elem).removeClass('js-fade');
+        $(elem).addClass('js-fade-done');
+        $fadeElems.splice(i, 1);
+      }
+    }
   });
 }
 
