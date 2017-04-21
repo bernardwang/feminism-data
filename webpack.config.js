@@ -48,10 +48,7 @@ module.exports = {
       },
       {
         test: /vendor\/(\S*)\.js$/,
-        loader: 'script-loader',
-        query: {
-          presets: ['es2015']
-        }
+        loader: 'script-loader'
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
@@ -61,10 +58,11 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
-      $: 'webpack-zepto',
-      jQuery: 'webpack-zepto',
-      'window.jQuery': 'webpack-zepto',
-      'root.jQuery': 'webpack-zepto',
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      'window.$': 'jquery',
+      'root.jQuery': 'jquery',
       d3: 'd3',
     }),
     new HTMLPlugin({
@@ -75,6 +73,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
+      'Velocity': path.join(__dirname, 'node_modules/velocity-animate/velocity.js'),
       'node_modules': path.join(__dirname, 'node_modules'),
       'bower_modules': path.join(__dirname, 'bower_modules'),
     }
